@@ -1,0 +1,603 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 500px;
+    background: url("bg.jpeg") no-repeat center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.t-sm{
+    font-size: smaller;
+}
+
+header h1{
+    margin: 30px 10px;
+}
+
+.h-btn{
+    color: white;
+    text-decoration: none;
+    background-color: orange;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+.h-btn:hover{
+    box-shadow: 0 0 5px white;
+}
+
+.scroll{
+    margin-top: 100px;
+}
+
+.mouse{
+    width: 20px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    margin: 5px auto;
+}
+
+@media screen and (max-width:493px) {
+    header{
+        height: 550px;
+    }
+}
+
+.d{
+    padding: 40px 12%;
+    text-align: center;
+}
+
+.p1{
+    width: 50%;
+    margin: 10px auto;
+}
+
+.d1-low{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.l, .r{
+    width: 230px;
+    margin: 40px;
+    border-bottom: 1px solid gray;
+}
+
+.l{
+    text-align: right;
+}
+
+.r{
+    text-align: left;
+}
+
+.l p, .r p{
+    margin: 5px 0;
+    padding-bottom: 20px;
+}
+
+.d1-low h4:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:1172px){
+    .p1{
+        width: 90%;
+    }
+
+    .r{
+        width: 90%;
+        margin: 2% auto;
+        text-align: center;
+        border: none;
+    }
+}
+@media screen and (max-width:764px){
+    .l{
+        width: 90%;
+        margin: 2% auto;
+        text-align: center;
+        border: none;
+    }
+}
+
+.d-2, .d-4, .d-6, .d-8{
+    background-color: rgb(41, 51, 84);
+    color: white;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 250px;
+    height: 440px;
+    margin: 20px 0;
+}
+
+.c2{
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.card img{
+    width: 60px;
+    margin-bottom: 5px;
+}
+
+.c-up, .c-low{
+    margin-bottom: 10px;
+    padding: 10px 5px 20px 5px;
+}
+
+.c-up{
+    border-bottom: 1px solid gray;
+}
+
+.card h4{
+    margin: 10px 0;
+}
+
+.card p, .p1{
+    color: rgb(161, 161, 161);
+}
+
+@media screen and (max-width:988px) and (min-width:661px){
+    .c1, .c2{
+        margin-bottom: 0;
+    }
+
+    .c1 .c-low, .c2 .c-low{
+        margin-bottom: 0;
+    }
+
+    .c2{
+        margin-right: 1px;
+        border-right: none;
+    }
+
+    .c3{
+        display: flex;
+        width: 500px;
+        height: 210px;
+        border-top: 1px solid gray;
+        margin-top: 0;
+    }
+
+    .c3 .c-up, .c3 .c-low{
+        padding-top: 20px;
+        margin-top: 0;
+    }
+
+    .c3 .c-up{
+        border-bottom: none;
+        border-right: 1px solid gray;
+        padding-right: 4px;
+    }
+}
+
+@media screen and (max-width:660px){
+    .c2{
+        border: none;
+        margin: 20px 1px;
+    }
+
+    .c2, .c3{
+        margin-top: 0;
+    }
+
+    .c-low{
+        border-bottom: 1px solid gray;
+    }
+
+    .c3 .c-low{
+        border-bottom: none;
+    }
+}
+
+.cards-2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    gap: 10px;
+}
+
+.card-2{
+    width: 220px;
+    height: 180px;
+}
+
+.c2-1{
+    background: url("i1.jpeg") no-repeat center;
+    background-size: cover;
+}
+.c2-2{
+    background: url("i2.jpeg") no-repeat center;
+    background-size: cover;
+}
+.c2-3{
+    background: url("i3.jpeg") no-repeat center;
+    background-size: cover;
+}
+.c2-4{
+    background: url("i4.jpeg") no-repeat center;
+    background-size: cover;
+}
+.c2-5{
+    background: url("i5.jpeg") no-repeat center;
+    background-size: cover;
+}
+.c2-6{
+    background: url("i6.jpeg") no-repeat center;
+    background-size: cover;
+}
+.c2-7{
+    background: url("i7.jpeg") no-repeat center;
+    background-size: cover;
+}
+.c2-8{
+    background: url("i8.jpeg") no-repeat center;
+    background-size: cover;
+}
+
+.card-2 div{
+    display: none;
+    background-color: rgba(252, 48, 48, 0.53);
+    width: 100%;
+    height: 180px;
+    color: white;
+}
+
+.card-2 div i{
+    margin: 80px 0 60px 0;
+}
+
+.card-2:hover div{
+    display: block;
+}
+
+@media screen and (min-width:1325px){
+    .cards-2{
+        width: 950px;
+        margin: 20px auto;
+    }
+}
+
+.d4-up{
+    border-bottom: 1px solid gray;
+    padding-bottom: 30px;
+}
+
+.d4-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.d4-card{
+    border: 1px solid;
+    width: 40px;
+    height: 40px;
+}
+
+.d4-c1{
+    background: url("f1.jpeg") no-repeat center;
+    background-size: cover;
+}
+.d4-c2{
+    background: url("f2.jpeg") no-repeat center;
+    background-size: cover;
+}
+.d4-c3{
+    background: url("f3.jpeg") no-repeat center;
+    background-size: cover;
+}
+.d4-c4{
+    background: url("f4.jpeg") no-repeat center;
+    background-size: cover;
+}
+.d4-c5{
+    background: url("f5.jpeg") no-repeat center;
+    background-size: cover;
+}
+.d4-c6{
+    background: url("f6.jpeg") no-repeat center;
+    background-size: cover;
+}
+.d4-c7{
+    background: url("f7.jpeg") no-repeat center;
+    background-size: cover;
+}
+
+.d4-card div{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 52, 52, 0.53);
+    display: none;
+}
+
+.d4-card div i{
+    margin-top: 20px;
+}
+
+.d4-card:hover div{
+    display: block;
+}
+
+.d4-cards2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.d4-card2{
+    width: 120px;
+    padding: 10px 0;
+    background-color: white;
+}
+
+.d4-card2 a{
+    text-decoration: none;
+    color: gray;
+}
+
+.d4-card2:hover{
+    box-shadow: 0px 0px 5px white;
+}
+
+.d5-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.d5-card{
+    border: 1.5px solid rgb(194, 194, 194);
+    width: 200px;
+}
+
+.d5-c-up{
+    background-color: rgb(227, 224, 224);
+    padding: 20px;
+    border-bottom: 1.5px solid rgb(194, 194, 194);
+}
+
+.d5-c-low p{
+    padding: 10px;
+    margin: 0 15px;
+    border-bottom: 1.5px solid rgb(194, 194, 194);
+}
+
+.p-btn{
+    display: block;
+    text-decoration: none;
+    color: white;
+    width: 150px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: rgb(41, 51, 84);
+}
+
+.d5-card:hover{
+    border-color: rgba(255, 45, 45, 0.904);
+}
+
+.d5-card:hover .d5-c-up{
+    border-bottom-color: rgba(255, 45, 45, 0.904);
+    background-color: rgba(255, 45, 45, 0.904);
+}
+
+.d5-card:hover .p-btn{
+    background-color: rgba(255, 45, 45, 0.904);
+}
+
+.d-6{
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 0;
+}
+
+.d6-left img{
+    height: 100%;
+}
+
+.d6-right{
+    margin: auto 20px;
+    width: 30%;
+}
+
+.d6-r-low{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width:1132px){
+    .d-6{
+        padding: 0 12%;
+    }
+    .d6-right{
+        text-align: center;
+        width: 100%;;
+        margin: 10px 0 30px 0;
+    }
+
+    .d6-r-low{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:650px){
+    
+
+    .d6-left img{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.d7-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.d7-card{
+    width: 250px;
+}
+
+.icon{
+    margin: 10px 0;
+}
+
+.icon i{
+    width: 30px;
+    padding: 7px 0;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+#i1{
+   background-color: rgb(79, 79, 196); 
+}
+#i2{
+   background-color: rgb(44, 174, 255); 
+}
+#i3{
+   background-color: rgb(206, 62, 62); 
+}
+
+#i1:hover{
+    box-shadow: 0px 0px 5px rgb(79, 79, 196);
+}
+#i2:hover{
+    box-shadow: 0px 0px 5px rgb(44, 174, 255);
+}
+#i3:hover{
+    box-shadow: 0px 0px 5px rgb(206, 62, 62);
+}
+
+.c-form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+#msg{
+    width: 300px;
+    resize: none;
+    padding: 5px 5px 0 5px;
+}
+
+.f-right{
+    margin-top: 2px;
+}
+
+#name, #mail{
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+#code{
+    width: 190px;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+#s-btn{
+    width: 90px;
+    padding: 7px 5px;
+    color: white;
+    background-color: rgb(243, 58, 58);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#s-btn:hover{
+    box-shadow: 0 0 5px white;
+}
+
+@media screen and (max-width:416px) {
+    .c-form{
+        gap: 10px;
+    }
+
+    #msg, #name, #mail, #code{
+        width: 90%;
+    }
+
+    #code{
+        margin: 0 0 20px 0;
+    }
+
+    #s-btn{
+        width: 100px;
+    }
+}
+
+footer{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.up-btn{
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(243, 58, 58);
+    position: relative;
+    bottom: 10px;
+}
+
+.up-btn:hover{
+    box-shadow: 0 0 5px white;
+}
+
+.red{
+    color: rgb(255, 63, 63);
+}
+
+footer p{
+    margin: 5px 0;
+}
+
+.fp-1{
+    margin-top: 20px;
+}
+
+.fp-2{
+    margin-bottom: 30px;
+}

@@ -1,0 +1,796 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.h{
+    padding: 0px 5%;
+}
+
+.h-1{
+    padding: 8px 5%;
+    background-color: rgb(46, 46, 126);
+    font-size: small;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.h-1 div{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media screen and (min-width: 1515px) {
+    .h-1{
+        justify-content: center;
+        gap: 700px;
+    }
+}
+
+.h-2{
+    padding: 8px 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.navlist{
+    padding-top: 5px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navlist li:hover a{
+    color: black;
+}
+
+.navlist li a{
+    text-decoration: none;
+    color: gray;
+}
+
+.dropbtn {
+  background-color: white;
+  color: gray;
+  font-size: medium;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown:hover button{
+    color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (min-width: 1515px) {
+    .h-2{
+        justify-content: center;
+        gap: 660px;
+    }
+}
+
+.h-3{
+    padding: 0;
+    height: 450px;
+    background: url("bg.jpeg") no-repeat center;
+    background-size: cover;
+}
+
+.h-3 div{
+    width: 45%;
+    box-sizing: border-box;
+    padding:  10px 5%;
+    height: 450px;
+    background-color: rgb(255, 222, 227);
+    box-shadow: 10px 0px 10px rgb(255, 222, 227);
+}
+
+.h-3 p{
+    color: rgb(90, 90, 90);
+    font-size: small;
+}
+
+.h3-p1{
+    margin-top: 15%;
+}
+
+.h3-p2{
+    margin: 10px 0 25px 0;
+}
+
+.h3-btn{
+    text-decoration: none;
+    font-size: small;
+    background-color: rgb(255, 52, 106);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+
+.h3-btn:hover{
+    box-shadow: 0 0 5px rgb(255, 52, 106);
+}
+
+@media screen and (max-width: 500px){
+    .h-3 div{
+        width: 60%;
+        height: 500px;
+    }
+
+    .h-3{
+        height: 500px;
+    }
+}
+
+.d{
+    padding: 0 5%;
+}
+
+.d1-cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 60px;
+}
+
+.d1-card{
+    box-sizing: border-box;
+    background-color: white;
+    width: 350px;
+    height: 240px;
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgb(106, 106, 106);
+    padding: 30px;
+    transition: all .5s;
+}
+
+.d1-card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 2px 15px rgb(23, 23, 23); 
+    transition-timing-function: ease-in-out;
+}
+
+.d1-card h3{
+    margin: 15px 0;
+}
+
+.d1-card p{
+    color: gray;
+}
+
+.d1-low{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap-reverse;
+    margin: 50px 0;
+}
+
+.d1-left{
+    width: 420px;
+}
+
+.d1-left p{
+    color: gray;
+}
+
+.d1-left > p{
+    margin: 20px 0;
+}
+
+.d1-p2 p{
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 1515px){
+    .d1-low{
+        justify-content: center;
+        gap: 245px;
+    }
+}
+
+@media screen and (max-width: 1144px){
+    .d1-low{
+        justify-content: center;
+    }
+
+    .d1-left{
+        margin-top: 20px;
+        width: 95%;
+        text-align: center;
+    }
+
+    .d1-p2{
+        width:260px;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .d1-right img{
+        width: 100%;
+    }
+}
+
+.d-2{
+    padding: 40px 5%;
+    background-color: rgb(236, 236, 236);
+    text-align: center;
+}
+
+.d2-up{
+    width: 650px;
+    margin: 20px auto;
+}
+
+.d2-up p{
+    margin: 10px 0;
+}
+
+.d2-cards{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.d2-card{
+    box-sizing: border-box;
+    padding: 40px;
+    width: 350px;
+    height: 280px;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.d2-card h3{
+    margin: 20px;
+}
+
+.d2-card p{
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.d2-card a{
+    text-decoration: none;
+    color: gray;
+}
+
+.d2-card:hover{
+    box-shadow: 0 0 10px rgb(92, 92, 92);
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 725px){
+    .d2-up{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .d2-card{
+        padding: 20px;
+    }
+}
+
+.d-3{
+    text-align: center;
+    padding: 50px 5%;
+    background: linear-gradient(to right, #202d65, rgb(255, 46, 101));
+    color: white;
+}
+
+.d3-up, .d4-up, .d6-up{
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.d3-up p, .d4-up p, .d6-up p{
+    margin: 20px 0;
+    line-height: 30px;
+}
+
+.d3-cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px 0 0 20px;
+}
+
+.d3-cards a{
+    text-decoration: none;
+    color: white;
+}
+
+.d3-card{
+    border: 1px solid white;
+    width: 150px;
+    height: 50px;
+    border-radius: 3px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    font-size: small;
+    transition: all .3s ease-in-out;
+}
+
+.d3-card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 8px white;
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 670px){
+    .d3-up, .d4-up, .d6-up{
+        width: 100%;
+    }
+}
+
+.d-4{
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.d4-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.d4-list li{
+    border: 1.5px dashed #202d65;
+    padding: 5px 10px;
+    transition: all .2s ease-in-out;
+}
+
+.d4-list li a{
+    text-decoration: none;
+    color: #202d65;
+}
+
+.d4-list li:hover{
+    background-color: #202d65;
+}
+
+.d4-list li:hover a{
+    color: white;
+}
+
+.d4-cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.d4-card{
+    width: 350px;
+    height: 300px;
+    transition: all .3s ease-in-out;
+}
+
+.d4-card img{
+    width: 100%;
+    height: 100%;
+}
+
+.d4-card:hover{
+    box-shadow: 0 0 10px black;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 300px){
+    .d4-card{
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 1689px){
+    .d-2, .d-4{
+        padding: 40px 16%;
+    }
+}
+@media screen and (min-width: 2235px){
+    .d-2, .d-4{
+        padding: 40px 24%;
+    }
+}
+
+.d-5{
+    padding: 40px 5%;
+    background-color: #f1f1f1;
+}
+
+.d5-up{
+    width: 600px;
+}
+
+.d5-up p{
+    margin: 20px 0;
+    line-height: 30px;
+}
+
+@media screen and (min-width: 1250px){
+    .d5-up{
+        width: 1130px;
+        margin: 0 auto;
+    }
+    .d5-up p{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .d5-up{
+        width: 100%;
+    }
+}
+
+.d5-cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.d5-card{
+    margin: 30px 0;
+    width: 350px;
+    height: 390px;
+    background-color: white;
+    transition: all .3s ease-in-out;
+}
+
+.d5-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px black;
+}
+
+.d5-c-up{
+    box-sizing: border-box;
+    color: white;
+    font-size: x-small;
+    text-align: center;
+    padding: 10px;
+}
+
+.d5c1{
+    height: 200px;
+    background: url("d5c1.jpeg") no-repeat center;
+    background-size: cover;
+}
+.d5c1 p{
+    width: 40px;
+    padding: 4px 8px 5px 8px;
+    border-radius: 10px;
+    background-color: rgb(64, 121, 255);
+    float: right;
+}
+.d5c2{
+    height: 200px;
+    background: url("d5c2.jpeg") no-repeat center;
+    background-size: cover;
+}
+.d5c2 p{
+    width: 60px;
+    padding: 4px 8px 5px 8px;
+    border-radius: 10px;
+    background-color: #ff4242;
+    float: right;
+}
+.d5c3{
+    height: 200px;
+    background: url("d5c3.jpeg") no-repeat center;
+    background-size: cover;
+}
+.d5c3 p{
+    width: 40px;
+    padding: 4px 8px 5px 8px;
+    border-radius: 10px;
+    background-color: rgb(49, 117, 123);
+    float: right;
+}
+
+.d5-c-low{
+    padding: 20px;
+}
+
+.d5-c-low h3{
+    color: #202d65;
+}
+
+.d5-lowp1{
+    font-size: smaller;
+    color: rgb(159, 159, 159);
+    margin: 10px 0;
+}
+
+.d5-lowp1 span{
+    margin-right: 10px;
+}
+
+.d5-lowp2{
+    margin: 10px 0 20px 0;
+    line-height: 25px;
+    color: rgb(109, 109, 109);
+}
+
+.d5-c-low a{
+    text-decoration: none;
+    color: rgb(57, 57, 57);
+}
+
+@media screen and (max-width: 338px){
+    .d5-card{
+        height: 420px;
+    }
+}
+@media screen and (max-width: 330px){
+    .d5-card{
+        height: 430px;
+    }
+}
+@media screen and (max-width: 324px){
+    .d5-card{
+        height: 440px;
+    }
+}
+
+.d-6{
+    padding: 40px 5%;
+}
+
+.d6-cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.d6-card{
+    width: 350px;
+    height: 350px;
+}
+
+.d6-c-up{
+    box-sizing: border-box;
+    height: 220px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    color: gray;
+    padding: 20px;
+    line-height: 25px;
+}
+
+.d6-c-up div{
+    margin-top: 10px;
+}
+
+.clip{
+    width: 40px;
+    height: 30px;
+    clip-path: polygon(0 0, 0% 100%, 66% 0);
+    position: relative;
+    top: 30px;
+    left: 35px;
+    background-color: #f1f1f1;
+}
+
+.d6-c-low{
+    display: flex;
+    gap: 10px;
+    margin: 40px 0 20px 20px;
+}
+
+.d6-c-left img{
+    border-radius: 50%;
+}
+
+.d6-c-right{
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 378px){
+    .d6-card{
+        height: 350px;
+    }
+    .d6-c-up{
+        height: 250px;
+    }
+}
+@media screen and (max-width: 338px){
+    .clip{
+        top: 40px;
+    }
+    .d6-card{
+        height: 410px;
+    }
+    .d6-c-up{
+        height: 280px;
+    }
+}
+
+.d-7{
+    padding: 40px 5%;
+    background-color: #f1f1f1;
+}
+
+.d7-cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.d7-card{
+    width: 350px;
+    height: 450px;
+    text-align: center;
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+.d7-c-up img{
+    width: 100%;
+}
+
+.d7-c-low{
+    padding: 20px;
+}
+
+.d7-c-low p{
+    margin: 5px;
+}
+
+.d7-icon i{
+    margin: 5px;
+}
+
+@media screen and (max-width: 370px){
+    .d7-card{
+        height: 50%;
+        padding-bottom: 0;
+    }
+}
+
+.d-8{
+    padding: 40px 7%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.d8-left p{
+    margin: 10px 0;
+    color: gray;
+}
+
+.d8-right{
+    margin-top: 20px;
+}
+
+.contact-btn{
+    background-color: rgb(249, 32, 112);
+    padding: 12px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+
+@media screen and (min-width: 1300px){
+    .d-8{
+        justify-content: center;
+        gap: 400px;
+    }
+}
+
+.d-9{
+    padding: 40px 5%;
+    background: linear-gradient(to right, #202d65, rgb(255, 46, 101));
+    color: white;
+}
+
+.d-9{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.d9-l-card{
+    width: 180px;
+}
+
+.d9-c5{
+    width: 280px;
+}
+
+.d-9 h4{
+    margin: 25px 0;
+}
+
+.d-9 p{
+    margin: 15px 0;
+    color: rgb(231, 231, 231);
+}
+
+footer{
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    color: gray;
+}
+
+.f-icon i{
+    margin-left: 30px;
+}
+
+@media screen and (min-width: 1250px){
+    footer{
+        justify-content: center;
+        gap: 560px;
+    }
+}
+
+@media screen and (max-width: 647px){
+    footer{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .f-icon i{
+        margin: 0 20px;
+    }
+}

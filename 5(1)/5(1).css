@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 80vh;
+    background: url("5(1)head.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.dark {
+    background-color: rgba(0, 0, 0, 0.416);
+    height: 80vh;
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+
+    header,
+    .dark {
+        height: 65vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    header,
+    .dark {
+        height: 55vh;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    height: 20px;
+    padding: 20px 10px;
+}
+
+.navbar h3 {
+    width: 60px;
+    text-align: center;
+}
+
+.nav-list {
+    padding-top: 4px;
+    font-size: smaller;
+    width: 400px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-list li {
+    padding: 0 2%;
+}
+
+.nav-list a {
+    text-decoration: none;
+}
+
+.t-shadow:hover {
+    color: white;
+    text-shadow: 1px 1px 10px white;
+}
+
+.nav-btn {
+    width: 45px;
+    height: 40px;
+    background-color: rgba(108, 108, 108, 0.66);
+    border: none;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    top: -5px;
+    right: -15%;
+}
+
+.nav-btn-list {
+    display: none;
+}
+
+.nav-btn-list li {
+    border-bottom: 1px solid grey;
+    width: 100%;
+    height: 20px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-btn-list li a {
+    text-decoration: none;
+    color: black
+}
+
+
+@media screen and (max-width: 510px) {
+
+    header,
+    .dark {
+        height: 45vh;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-btn {
+        display: block;
+    }
+}
+
+.t-color {
+    color: rgba(214, 214, 214, 0.753);
+}
+
+.t-color-2 {
+    color: rgb(117, 117, 117);
+}
+
+.G-text {
+    color: rgb(13, 211, 13);
+}
+
+.headupper {
+    padding: 10% 3%;
+    text-align: center;
+}
+
+.btn {
+    border: none;
+    background: transparent;
+    border: 1px solid rgb(13, 211, 13);
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: rgba(13, 211, 13, 0.306);
+    box-shadow: 0px 0px 5px rgb(13, 211, 13);
+    cursor: pointer;
+}
+
+.s {
+    padding: 0 10% 30px 10%;
+
+}
+
+.s h1 {
+    padding: 5% 6% 1% 6%;
+}
+
+.u-line {
+    margin: 0 6%;
+    width: 40px;
+    height: 2px;
+    background-color: rgb(13, 211, 13);
+}
+
+.bg-grey {
+    background-color: rgba(236, 236, 236, 0.463);
+}
+
+@media screen and (min-width: 1200px) {
+    .s h1 {
+        padding-left: 3%;
+    }
+
+    .u-line {
+        margin-left: 3%;
+        margin-right: 8%;
+    }
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1%;
+    gap: 1%;
+}
+
+.card {
+    padding: 10px;
+    margin: 3% 0;
+}
+
+.card h3 {
+    border-bottom: 1px solid rgb(13, 211, 13);
+    padding-bottom: 3%;
+    margin-bottom: 4%;
+}
+
+.card-1 {
+    text-align: justify;
+    width: 300px;
+    height: 15vh;
+    padding-bottom: 5%;
+}
+
+@media screen and (max-width: 470px) {
+    .card-1 {
+        height: 20vh;
+    }
+}
+@media screen and (max-width: 360px) {
+    .card-1 {
+        height: 25vh;
+    }
+}
+
+@media screen and (min-width: 1370px){
+
+    .s h1{
+        padding: 2% 0 0 15%;
+    }
+
+    .u-line{
+        margin: 1% 0 2% 15%;
+    }
+
+    .s3-list{
+        position: relative;
+        left: 10%;
+    }
+
+}
+
+.card-2 {
+    width: 215px;
+    height: 180px;
+    margin-bottom: 1%;
+}
+
+.card-2 i {
+    margin: 25px 0 35px 0;
+}
+
+.s3-list {
+    margin: 2% 7%;
+    padding: 10px;
+    width: 350px;
+    height: 20px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.s3-list a {
+    text-decoration: none;
+}
+
+.s3-list a:hover {
+    color: #0dd30d;
+}
+
+.s3-list li {
+    padding-bottom: 5px;
+}
+
+.s3-list li:hover {
+    border-bottom: 1px solid #0dd30d;
+}
+
+@media screen and (max-width: 480px) {
+    .s3-list {
+        height: 140px;
+        width: 80%;
+        display: block;
+        text-align: center;
+    }
+
+    .s3-list li {
+        border-bottom: 1px solid gray;
+        padding: 10px;
+        height: 15px;
+    }
+}
+
+.card-3 {
+    width: 230px;
+    height: 150px;
+    margin: 5px 1px;
+    padding: 0;
+}
+
+.card-3:hover {
+    box-shadow: 0px 0px 20px black;
+}
+
+@media screen and (min-width: 1540px) and (max-width: 1886px) {
+    .cards-2, .cards-3{
+        width: 80%;
+        margin: 1% auto;
+    }
+}
+
+@media screen and (min-width: 1887px) and (max-width: 2012px) {
+    .cards-2, .cards-3{
+        width: 70%;
+        margin: 1% auto;
+    }
+}
+@media screen and (min-width: 2013px) {
+    .cards-2, .cards-3{
+        width: 60%;
+        margin: 1% auto;
+    }
+}
+
+.card-4 {
+    width: 140px;
+    height: 180px;
+    padding-right: 10px;
+}
+
+.card-4 h4 {
+    margin: 5px 0;
+    padding: 15px 0 5px 0;
+    border-top: 2px solid gray;
+}
+
+.card-4:hover {
+    box-shadow: 0px 0px 20px black;
+    cursor: pointer;
+}
+
+.s5lower {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+.s5left {
+    width: 180px;
+}
+
+.s5left p {
+    font-size: small;
+}
+
+.s5right {
+    width: 550px;
+}
+
+
+.contact-form {
+    padding: 1%;
+}
+
+#name,
+#mail {
+    margin: 1%;
+    padding-left: 2%;
+    width: 44%;
+    height: 25px;
+    border: 1px solid gray;
+}
+
+#msg {
+    width: 93.5%;
+    margin: 1%;
+    border: 1px solid gray;
+    padding: 1%;
+}
+
+#con-btn {
+    color: #0dd30d;
+    margin: 1%;
+}
+
+@media screen and (max-width:1012px) {
+
+    .s5left,
+    .s5right {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+.s-6{
+    padding-bottom: 0;
+}
+
+.links{
+    margin: 2% 5%;
+}
+
+.links a{
+    margin: 2%;
+}
+
+footer{
+    padding: 10px 11%;
+    font-size: smaller;
+    background-color: rgb(36, 36, 36);
+}

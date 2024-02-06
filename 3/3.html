@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            width: 100%;
+            height: 5vh;
+            background-color: rgb(1, 30, 24);
+            padding: 5px 0 5px;
+            border-bottom: 3px solid rgb(2, 82, 64);
+        }
+
+        header div {
+            display: inline-block;
+            position: absolute;
+            top: 1.5%;
+            right: 4%;
+        }
+
+        header button {
+            background: none;
+            border: none;
+            margin: 5px;
+        }
+
+        nav {
+            width: 100%;
+            height: 112.2px;
+            background-color: rgb(2, 53, 43);
+            color: white;
+        }
+
+        nav h1 {
+            position: relative;
+            top: 30%;
+            left: 5%;
+            width: 70%;
+            font-size: xx-large;
+            font-weight: lighter;
+            letter-spacing: 1px;
+            text-shadow: 0px 0px 5px white;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: right;
+            list-style-type: none;
+            position: relative;
+            top: 50px;
+            margin-right: 5%;
+        }
+
+        nav ul li {
+            margin-right: 2px;
+        }
+
+        .nav-btn {
+            border: none;
+            border-radius: 5px 5px 0 0;
+            background-color: rgb(127, 191, 31);
+            width: 110px;
+            height: 25.9px;
+        }
+
+        .nav-btn a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        #nb1 {
+            background-color: white;
+        }
+
+        #nb1 a {
+            color: black;
+        }
+
+        #menu {
+            position: absolute;
+            top: 75px;
+            right: 10%;
+            padding: 9px 5px 7px 5px;
+            background-color: rgb(127, 191, 31);
+            border: none;
+            border-radius: 5px;
+        }
+
+        @media screen and (max-width: 620px) {
+            .navbar {
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 620px) {
+            .menu {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            nav h1 {
+                top: 15%;
+            }
+        }
+
+        .menulist {
+            display: block;
+            position: absolute;
+            top: 105px;
+            right: 5%;
+            visibility: hidden;
+        }
+
+        .menu:hover .menulist {
+            visibility: visible;
+        }
+
+        .menulist li {
+            border-bottom: 1px solid grey;
+            width: 120px;
+            background-color: white;
+            text-align: center;
+            padding: 5px 0;
+
+        }
+
+        .menulist a {
+            text-decoration: none;
+            color: black;
+            vertical-align: middle;
+        }
+
+        #s-1 {
+            background: url("L3-1.jpg") no-repeat center;
+            background-size: cover;
+            height: 50%;
+            color: white;
+        }
+
+        #s-1 p {
+            width: 55%;
+            margin-left: 5%;
+        }
+
+        #s-1 h1 {
+            width: 80%;
+            margin-left: 5%;
+            padding: 3% 0 2% 0;
+        }
+
+        .s1-btn {
+            background-color: rgb(2, 53, 43);
+            border: none;
+            padding: 7px 10px;
+            margin: 0% 0% 2% 0%;
+            border-radius: 5px;
+            position: relative;
+            left: 50%;
+        }
+
+        .s1-btn:hover {
+            box-shadow: 0px 0px 10px white;
+        }
+
+        .s1-btn a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #s-2,
+        #s-3 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: rgb(1, 30, 24);
+        }
+
+        .container {
+            margin: 1%;
+            width: 340px;
+        }
+
+        .h-color {
+            color: #31bf33;
+        }
+
+        .container h2 {
+            margin: 5% 0;
+        }
+
+        .w-color {
+            color: white;
+        }
+
+        .list-p {
+            margin-left: 1%;
+            line-height: 150%;
+        }
+
+        #d-2 p,
+        #p2,
+        #p4 {
+            margin: 0 0 5% 2%;
+        }
+
+        #p1,
+        #p3 {
+            margin: 5% 0 0 2%;
+            color: #28962a;
+        }
+
+        @media screen and (max-width: 1084px) and (min-width: 730px) {
+            #d-3{
+                width: 700px;
+            }
+        }
+
+        @media screen and (max-width: 730px) {
+            .container{
+                width: 90%;
+            }
+        }
+
+        #s-3 {
+            background-color: rgb(2, 53, 43);
+            box-shadow: 2px 2px 10px black;
+        }
+
+        .container-2 {
+            box-sizing: border-box;
+            margin: 2%;
+        }
+
+        #d-4 {
+            width: 720px;
+            margin: 2% 5%;
+        }
+
+        #d-5 {
+            width: 300px;
+        }
+
+        #d-5 span {
+            padding: 4%;
+        }
+
+        .container-2 h2,
+        p {
+            margin-bottom: 3%;
+        }
+
+        @media screen and (max-width: 1185px) {
+            #d-5 h2{
+                text-align: center;
+                margin: 0%;
+            }
+            #d-5{
+                width: 90%;
+            }
+            .logo {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+        }
+
+        footer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: rgb(1, 30, 24);
+            line-height: 150%;
+        }
+
+        .left{
+            width: 550px;
+            margin: 2% 1% 1% 5%;
+        }
+
+        .right{
+            width: 200px;
+            margin: 2% 5% 1% 0%;
+        }
+
+        .right p{
+            text-align: right;
+        }
+
+        @media screen and (max-width: 840px) {
+            .right{
+                margin: 0% 0% 1% 5%;
+            }
+            .right p{
+                text-align: left;
+            }
+        }
+
+        .g-color{
+            color: #28962a;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <button title="Home"><a href="#"><i class="fa-solid fa-house" style="color: #fafafa;"></i></a></button>
+            <button title="User"><a href="#"><i class="fa-solid fa-user" style="color: #fafafa;"></i></a></button>
+            <button title="Message"><a href="#"><i class="fa-solid fa-envelope"
+                        style="color: #fafafa;"></i></i></a></button>
+        </div>
+    </header>
+
+    <nav>
+        <h1>BUSINESS COMPANY</h1>
+        <div class="navbar">
+            <ul>
+                <li><button id="nb1" class="nav-btn"><a href="#">HOME</a></button></li>
+                <li><button id="nb2" class="nav-btn"><a href="#">SERVICE</a></button></li>
+                <li><button id="nb3" class="nav-btn"><a href="#">NEWS</a></button></li>
+                <li><button id="nb4" class="nav-btn"><a href="#">ABOUT US</a></button></li>
+                <li><button id="nb5" class="nav-btn"><a href="#">CONTACT US</a></button></li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <button id="menu" class="menu-btn" title="Menu"><i class="fa-solid fa-bars fa-2xl"></i></button>
+            <ul class="menulist">
+                <li class="list"><a href="#">HOME</a></li>
+                <li class="list"><a href="#">SERVICE</a></li>
+                <li class="list"><a href="#">NEWS</a></li>
+                <li class="list"><a href="#">ABOUT US</a></li>
+                <li class="list"><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="content">
+        <section id="s-1">
+            <h1><i>providing you business solutions</i></h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio ab ex laboriosam rerum culpa
+                doloribus, deleniti dolor voluptates a reprehenderit omnis. Totam natus rerum, velit neque dicta facere labore repellendus assumenda adipisci vero necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veritatis explicabo voluptate a vero, sit et dolores. Repudiandae, ratione sed!</p>
+            <button class="s1-btn"><a href="#">Read More</a></button>
+        </section>
+
+        <section id="s-2">
+            <div id="d-1" class="container">
+                <h2 class="h-color">💼<i>Service Overview</i></h2>
+                <div class="list-p w-color">
+                    <p><i class="fa-solid fa-circle-check" style="color: #31bf33;"></i> Web Designing</p>
+                    <p><i class="fa-solid fa-circle-check" style="color: #31bf33;"></i> Web Development</p>
+                    <p><i class="fa-solid fa-circle-check" style="color: #31bf33;"></i> Print Material Designing</p>
+                    <p><i class="fa-solid fa-circle-check" style="color: #31bf33;"></i> Search Engine Optimization</p>
+                    <p><i class="fa-solid fa-circle-check" style="color: #31bf33;"></i> Rich Internet Application</p>
+                </div>
+            </div>
+            <div id="d-2" class="container">
+                <h2 class="h-color">👩‍💼<i>Our Team</i></h2>
+                <p class="w-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi maxime repellat,
+                    sapiente accusamus
+                    reprehenderit iure. Repellat, earum odio beatae magnam tempore sequi dolorem consequatur architecto
+                    voluptatem itaque molestias, modi ratione tenetur fugiat nesciunt molestiae perferendis quasi
+                    deserunt explicabo, rem similique?</p>
+            </div>
+            <div id="d-3" class="container">
+                <h2 class="h-color">📰<i>News & Events</i></h2>
+                <p id="p1">5th April 2009</p>
+                <p id="p2" class="w-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ab!
+                    Lorem ipsum dolor
+                    sit amet consectetur adipisicing.</p>
+                <p id="p3">5th April 2009</p>
+                <p id="p4" class="w-color">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, natus! Lorem
+                    ipsum, dolor sit
+                    amet consectetur adipisicing.</p>
+            </div>
+        </section>
+
+        <section id="s-3">
+            <div id="d-4" class="container-2">
+                <h2 class="h-color"><i>Welcome to Business company</i></h2>
+                <p class="w-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, consectetur delectus?
+                    Vel corrupti,
+                    provident porro quae repudiandae labore. Qui expedita vero nemo accusantium voluptate ipsam illo,
+                    animi recusandae similique ullam corrupti quae eveniet, doloribus pariatur! Quidem vel dignissimos
+                    laboriosam soluta laborum eius quam sapiente asperiores voluptas in magnam consequatur sint
+                    consectetur blanditiis unde, veritatis ut assumenda aut illo ab veniam. Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. Sequi possimus vitae, saepe eius deleniti aliquid, dolorem ullam
+                    asperiores iste dicta recusandae quae perspiciatis temporibus illum dignissimos quaerat assumenda.
+                    Ab, error.</p>
+                <p class="w-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iusto quibusdam harum
+                    quas commodi!
+                    Blanditiis repudiandae quibusdam labore quia, ipsum nulla consectetur iusto natus magni, tempore
+                    soluta doloremque. Ullam, natus aspernatur! Ipsa excepturi accusamus commodi! Eos illum
+                    necessitatibus ratione voluptas?</p>
+            </div>
+            <div id="d-5" class="container-2">
+                <h2 class="h-color"><i>Our Clients</i></h2>
+                <div class="logo">
+                    <span class="fas fa-floppy-disk fa-4x" style="color: #c4c5c67b;"></span>
+                    <span class="fas fa-star fa-4x" style="color: #c4c5c67b;"></span>
+                    <span class="fas fa-home fa-4x" style="color: #c4c5c67b;"></span>
+                    <span class="fas fa-umbrella fa-4x" style="color: #c4c5c67b;"></span>
+                    <span class="fas fa-clock-four fa-4x" style="color: #c4c5c67b;"></span>
+                    <span class="fas fa-pager fa-4x" style="color: #c4c5c67b;"></span>
+                    <span class="fas fa-diagram-project fa-4x" style="color: #c4c5c67b;"></span>
+                    <span class="fas fa-diagnoses fa-4x" style="color: #c4c5c67b;"></span>
+                    <span class="fas fa-diagram-successor fa-4x" style="color: #c4c5c67b;"></span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="left">
+            <p class="w-color">Website Template By: <span class="g-color">Rahul Joshi</span><br>Copyright 2006-2009, Business company Pvt. Ltd. - All Rights Reserved</p>
+        </div>
+        <div class="right">
+            <p class="g-color">Subscribe to RSS Feed <br>Valid XHTML | Valid CSS</p>
+        </div>
+    </footer>
+</body>
+
+</html>

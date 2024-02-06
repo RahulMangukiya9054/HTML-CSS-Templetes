@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    height: 80vh;
+    background: url("5(1)head.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.dark {
+    background-color: rgba(0, 0, 0, 0.416);
+    height: 80vh;
+    color: white;
+}
+
+@media screen and (max-width: 1200px) {
+
+    header,
+    .dark {
+        height: 65vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    header,
+    .dark {
+        height: 55vh;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    height: 20px;
+    padding: 20px 10px;
+}
+
+.navbar h3 {
+    width: 60px;
+    text-align: center;
+}
+
+.nav-list {
+    padding-top: 4px;
+    font-size: smaller;
+    width: 400px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-list li {
+    padding: 0 2%;
+}
+
+.nav-list a {
+    text-decoration: none;
+}
+
+.t-shadow:hover {
+    color: white;
+    text-shadow: 1px 1px 10px white;
+}
+
+.nav-btn {
+    width: 45px;
+    height: 40px;
+    background-color: rgba(108, 108, 108, 0.66);
+    border: none;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    top: -5px;
+    right: -15%;
+}
+
+.nav-btn-list {
+    display: none;
+}
+
+.nav-btn-list li {
+    border-bottom: 1px solid grey;
+    width: 100%;
+    height: 20px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-btn-list li a {
+    text-decoration: none;
+    color: black
+}
+
+
+@media screen and (max-width: 510px) {
+
+    header,
+    .dark {
+        height: 45vh;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .nav-btn {
+        display: block;
+    }
+}
+
+.t-color {
+    color: rgba(214, 214, 214, 0.753);
+}
+
+.t-color-2 {
+    color: rgb(117, 117, 117);
+}
+
+.G-text {
+    color: rgb(13, 211, 13);
+}
+
+.bg-grey {
+    background-color: rgba(236, 236, 236, 0.463);
+}
+
+.headupper {
+    padding: 10% 3%;
+    text-align: center;
+}
+
+.btn {
+    border: none;
+    background: transparent;
+    border: 1px solid rgb(13, 211, 13);
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: rgba(13, 211, 13, 0.306);
+    box-shadow: 0px 0px 5px rgb(13, 211, 13);
+    cursor: pointer;
+}
+
+.s{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1% 10%;
+}
+
+
+.cards{
+    text-align: justify;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.s h1{
+    padding-left: 2%;
+    /* padding: 0; */
+}
+
+.u-line {
+    /* margin: 1% 0 2% 5%; */
+    margin-left: 2%;
+    width: 40px;
+    height: 2px;
+    background-color: rgb(13, 211, 13);
+}
+
+.card{
+    margin-right: 0%;
+    width: 30%;
+}
+
+.card-1{
+    /* margin: 1% 0; */
+    margin: 2% 0;
+    width: 300px;
+}
+
+@media screen and (min-width: 1370px){
+    .s{
+        width: 100%;
+        padding: 1% 15%;
+    }
+
+    .s h1{
+        padding: 0;
+    }
+
+    .u-line{
+        margin: 1% 0 2% 0;
+    }
+
+    .cards{
+        justify-content: space-between;
+    }
+
+    .card{
+        margin-right: 2%;
+        width: 30%;
+    }
+
+    .card-1{
+        margin: 0%;
+    }
+
+}

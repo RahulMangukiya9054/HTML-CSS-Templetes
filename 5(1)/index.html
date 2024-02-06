@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 5(1)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <ul id="nav-btn-list" class="nav-btn-list">
+        <li><a class="t-color" href="#">Home</a></li>
+        <li><a class="t-color" href="#">About</a></li>
+        <li><a class="t-color" href="#">Service</a></li>
+        <li><a class="t-color" href="#">Project</a></li>
+        <li><a class="t-color" href="#">Contents</a></li>
+    </ul>
+    <header>
+        <div class="dark">
+            <nav class="navbar">
+                <h3>Optics</h3>
+                <ul class="nav-list">
+                    <li><a class="t-shadow t-color" href="#">HOME</a></li>
+                    <li><a class="t-shadow t-color" href="#">ABOUT</a></li>
+                    <li><a class="t-shadow t-color" href="#">SERVICE</a></li>
+                    <li><a class="t-shadow t-color" href="#">PORFOLIO</a></li>
+                    <li><a class="t-shadow t-color" href="#">TEAM</a></li>
+                    <li><a class="t-shadow t-color" href="#">CONTACT</a></li>
+                </ul>
+
+                <button id="nav-btn" class="nav-btn" title="Menu" onclick="showmenu()"><i
+                        class="fa-solid fa-bars fa-2xl" style="color: white;"></i></button>
+            </nav>
+
+            <div class="headupper">
+                <h1>We are <span class="G-text">Optics</span></h1>
+                <br>
+                <p class="t-color">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <br><br>
+                <button class="btn btn-1"><a class="G-text" href="#">Learn More</a></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <section class="s s-1 bg-grey">
+            <div class="s1upper">
+                <h1>About Us</h1>
+                <hr class="u-line">
+            </div>
+            <div class="s1lower cards cards-1">
+                <div class="card card-1">
+                    <h3 style="width: 110px;">Who We Are</h3>
+                    <p class="t-color-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odio nisi
+                        ducimus explicabo perferendis iusto rem quas ut obcaecati vitae provident id tempore, labore
+                        aliquam magni! Id natus nam quae.</p>
+                </div>
+                <div class="card card-1">
+                    <h3 style="width: 105px;">Who We Do</h3>
+                    <p class="t-color-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odio nisi
+                        ducimus explicabo perferendis iusto rem quas ut obcaecati vitae provident id tempore, labore
+                        aliquam magni! Id natus nam quae.</p>
+                </div>
+                <div class="card card-1">
+                    <h3 style="width: 145px;">Why Choose Us</h3>
+                    <p class="t-color-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odio nisi
+                        ducimus explicabo perferendis iusto rem quas ut obcaecati vitae provident id tempore, labore
+                        aliquam magni! Id natus nam quae.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section class="s s-2">
+            <h1>Our Services</h1>
+            <hr class="u-line">
+
+            <div class="cards cards-2">
+                <div class="card card-2">
+                    <i class="fa-solid fa-desktop fa-2xl" style="color: #0dd30d;"></i>
+                    <h3 style="width: 105px;">Web design</h3>
+                    <p class="t-color-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nesciunt ratione
+                        suscipit, sapiente saepe minima.</p>
+                </div>
+                <div class="card card-2">
+                    <i class="fa-solid fa-gears fa-2xl" style="color: #0dd30d;"></i>
+                    <h3 style="width: 160px;">App Development</h3>
+                    <p class="t-color-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nesciunt ratione
+                        suscipit, sapiente saepe minima.</p>
+                </div>
+                <div class="card card-2">
+                    <i class="fa-solid fa-chart-pie fa-2xl" style="color: #0dd30d;"></i>
+                    <h3 style="width: 85px;">Analytics</h3>
+                    <p class="t-color-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nesciunt ratione
+                        suscipit, sapiente saepe minima.</p>
+                </div>
+                <div class="card card-2">
+                    <i class="fa-solid fa-chart-line fa-2xl" style="color: #0dd30d;"></i>
+                    <h3 style="width: 90px;">Marketing</h3>
+                    <p class="t-color-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nesciunt ratione
+                        suscipit, sapiente saepe minima.</p>
+                </div>
+                <div class="card card-2">
+                    <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #0dd30d;"></i>
+                    <h3 style="width: 110px;">eCommerce</h3>
+                    <p class="t-color-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nesciunt ratione
+                        suscipit, sapiente saepe minima.</p>
+                </div>
+                <div class="card card-2">
+                    <i class="fa-regular fa-file-lines fa-2xl" style="color: #0dd30d;"></i>
+                    <h3 style="width: 195px;">Content Development</h3>
+                    <p class="t-color-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nesciunt ratione
+                        suscipit, sapiente saepe minima.</p>
+                </div>
+                <div class="card card-2">
+                    <i class="fa-solid fa-rocket fa-2xl" style="color: #0dd30d;"></i>
+                    <h3 style="width: 80px;">Branding</h3>
+                    <p class="t-color-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nesciunt ratione
+                        suscipit, sapiente saepe minima.</p>
+                </div>
+                <div class="card card-2">
+                    <i class="fa-solid fa-camera fa-2xl" style="color: #0dd30d;"></i>
+                    <h3 style="width: 190px;">Video & Photography</h3>
+                    <p class="t-color-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nesciunt ratione
+                        suscipit, sapiente saepe minima.</p>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- <section class="s s-3 bg-grey">
+            <h1>Our Portfolio</h1>
+            <hr class="u-line">
+
+            <ul class="s3-list">
+                <li><a class="t-color-2" href="#">All</a></li>
+                <li><a class="t-color-2" href="#">Web Design</a></li>
+                <li><a class="t-color-2" href="#">App Developent</a></li>
+                <li><a class="t-color-2" href="#">Branding</a></li>
+            </ul>
+
+            <div class="cards cards-3">
+                <div class="card card-3">
+                    <img src="c1.jpg" alt="image">
+                </div>
+                <div class="card card-3">
+                    <img src="c2.jpg" alt="image">
+                </div>
+                <div class="card card-3">
+                    <img src="c3.jpg" alt="image">
+                </div>
+                <div class="card card-3">
+                    <img src="c4.jpg" alt="image">
+                </div>
+                <div class="card card-3">
+                    <img src="c5.jpg" alt="image">
+                </div>
+                <div class="card card-3">
+                    <img src="c6.jpg" alt="image">
+                </div>
+                <div class="card card-3">
+                    <img src="c7.jpg" alt="image">
+                </div>
+                <div class="card card-3">
+                    <img src="c8.jpg" alt="image">
+                </div>
+            </div>
+
+        </section> -->
+
+        <!-- <section class="s s-4">
+            <h1>Meet the Team</h1>
+            <hr class="u-line">
+
+            <div class="cards cards-4">
+                <div class="card card-4">
+                    <img src="hm1.jpg" alt="image">
+                    <h4 style="width: 75px;">John Doe</h4>
+                    <p class="t-color-2">Founder</p>
+                </div>
+                <div class="card card-4">
+                    <img src="hm3.jpg" alt="image">
+                    <h4 style="width: 75px;">Mike Doe</h4>
+                    <p class="t-color-2">Web Desiner</p>
+                </div>
+                <div class="card card-4">
+                    <img src="hm2.jpg" alt="image">
+                    <h4 style="width: 75px;">Jane Doe</h4>
+                    <p class="t-color-2">Creative Director</p>
+                </div>
+                <div class="card card-4">
+                    <img src="hm4.jpg" alt="image">
+                    <h4 style="width: 90px;">Larry Show</h4>
+                    <p class="t-color-2">Project Manager</p>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- <section class="s s-5 bg-grey">
+            <h1>Contact Us</h1>
+            <hr class="u-line">
+
+            <div class="s5lower">
+                <div class="s5left">
+                    <h4>Contact info</h4>
+                    <br>
+                    <p><i class="fa-solid fa-location-dot" style="color: #0dd30d;"></i> 4321 California st.Sanfransisco
+                        CA 12345.</p>
+                    <br>
+                    <p><i class="fa-regular fa-envelope" style="color: #0dd30d;"></i> xyz@company.com</p>
+                    <br>
+                    <p><i class="fa-solid fa-phone" style="color: #0dd30d;"></i> +1 123 456 1234</p>
+                </div>
+
+                <div class="s5right">
+                    <h4>Leave us a message</h4>
+                    <br>
+                    <form class="contact-form" action="#">
+                        <input type="text" id="name" placeholder="Name">
+                        <input type="email" id="mail" placeholder="Email">
+                        <br>
+                        <textarea name="message" id="msg" cols="70" rows="5" placeholder="Message"></textarea>
+                        <br>
+                        <input type="submit" id="con-btn" class="btn" value="Send Message">
+                    </form>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- <section class="s s-6">
+            <div class="links">
+                <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f" style="color: #0dd30d;"></i></a>
+                <a href="#" title="Twitter"><i class="fa-brands fa-twitter" style="color: #0dd30d;"></i></a>
+                <a href="#" title="Internet"><i class="fa-solid fa-globe" style="color: #0dd30d;"></i></a>
+                <a href="#" title="GitHub"><i class="fa-brands fa-github" style="color: #0dd30d;"></i></a>
+                <a href="#" title="Instagram"><i class="fa-brands fa-instagram" style="color: #0dd30d;"></i></a>
+                <a href="#" title="Linked-In"><i class="fa-brands fa-linkedin-in" style="color: #0dd30d;"></i></a>
+            </div>
+        </section> -->
+    </div>
+
+    <!-- <footer>s
+        <p class="t-color">Copyright &copy; Optics | Privacy Policy</p>
+    </footer> -->
+
+    <script>
+
+        let a = false;
+
+        const button = document.getElementById('nav-btn');
+
+        button.addEventListener('click', function showmenu() {
+
+            a = !a;
+
+            if (a) {
+                document.getElementById("nav-btn-list").style.display = "block";
+            }
+            else {
+                document.getElementById("nav-btn-list").style.display = "none";
+            }
+        });
+
+    </script>
+</body>
+
+</html>
